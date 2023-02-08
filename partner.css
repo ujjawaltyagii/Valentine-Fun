@@ -4,6 +4,10 @@ p{
     opacity: 0.9;
 }
 
+button{
+    cursor: pointer;
+}
+
 #dialog{
     width:300px;
 }
