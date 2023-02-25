@@ -1,74 +1,123 @@
-p{
+body{
+    background-color: #E72650;
+}
+
+p {
     font-size: large;
     font-weight: 600;
     opacity: 0.9;
-}
-
-button{
+  }
+  
+  button {
     cursor: pointer;
-}
-
-#dialog{
-    width:300px;
-}
-
-.right{
+  }
+  
+  #dialog {
+    width: 300px;
+  }
+  
+  .right {
     margin-left: 120px;
-}
-
-.pic1{
+  }
+  
+  .pic1 {
     margin-left: 3vw;
-}
-
-#bocchi2 {
+  }
+  
+  #bocchi2 {
     position: absolute;
-     left: 45%;
-      top: 511px;
-      
-      /* top: 521px;
-    left: 53%; */
-
+    left: 35%;
+    top: 511px;
+    background-color: #df6540;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-left: 10px;
+    border: solid 2px black;
 }
 
-.heading{
+  
+  .heading {
     text-align: center;
     font-size: 35px;
     font-family: Candara, Oswald;
-}
-
-.pic {
+    color: white
+  }
+  
+  .pic {
     display: block;
     margin: 0 auto;
     width: 25%;
-}
-
-    
-#bocchi1 {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #bocchi1 {
     position: fixed;
     top: 521px;
     left: 53%;
     transform: translate(-50%, -50%);
-}
-
-@media (max-width:480px) {
-    .heading{
-        font-size: 29px;
+  }
+  button {
+    background-color: #0c7db2;
+    border-radius: 5px;
+   
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+  }
+  
+  button.yes {
+    background-color: #5cb85c;
+    border: none;
+  }
+  
+  button.no {
+    background-color: #d9534f;
+    
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 29px;
     }
-
+  
     .pic {
-        width: 75%;        
+      width: 75%;
     }
-
+  
     #bocchi1 {
-        top: 432px;
-        left: 65%;
+      top: 432px;
+      left: 65%;
     }
-
+  
     #bocchi2 {
-         left: 35%;
-         top: 421px;
+      left: 35%;
+      top: 421px;
     }
-    .pic1{
-        margin-left: 11vw;
+  
+    .pic1 {
+      margin-left: 11vw;
     }
-}
+  
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    button.yes {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
+  
